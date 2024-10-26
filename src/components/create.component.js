@@ -20,14 +20,15 @@ export class CreateComponent extends Component {
 
 function submitHandler(event) {
 	event.preventDefault()
-	
+
 	if (this.form.isValid()) {
 		const formData = {
 			type: this.$el.type.value,
 			...this.form.value()
 		}
+
+		this.form.clear()
+
 		console.log('Submit', formData);
-	} else {
-		console.warn('Form is invalid');
 	}
-	}
+}
