@@ -18,7 +18,7 @@ export class FavoriteComponent extends Component {
 		const html = renderList(favorites)
 		this.$el.insertAdjacentHTML('afterBegin', html)
 	}
-	
+
 	onHide() {
 		this.$el.innerHTML = ''
 	}

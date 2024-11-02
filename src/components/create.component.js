@@ -28,7 +28,7 @@ async function submitHandler(event) {
 			date: new Date().toLocaleDateString(),
 			...this.form.value()
 		}
-		
+
 		await apiService.createPost(formData)
 		this.form.clear()
 		alert('Post created in Database')

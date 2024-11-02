@@ -26,7 +26,7 @@ class ApiService {
 			console.log(error);
 		}
 	}
-	
+
 	async fetchpostById(id) {
 		try {
 			const request = new Request(`${this.url}/posts/${id}.json`, {
